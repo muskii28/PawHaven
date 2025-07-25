@@ -471,6 +471,8 @@ header p {
 /* Section Contact */
 .section-contact {
     padding: 50px;
+}
+.contact-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -783,9 +785,11 @@ footer {
     /* Contact */
     .section-contact {
         padding: 20px;
-        grid-template-columns: 1fr;
     }
 
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
 
 
 
