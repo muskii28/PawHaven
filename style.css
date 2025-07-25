@@ -471,6 +471,7 @@ header p {
 /* Section Contact */
 .section-contact {
     padding: 50px;
+    max-width: 100%;
 }
 .contact-grid{
     display: grid;
