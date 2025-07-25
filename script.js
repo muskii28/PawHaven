@@ -10,14 +10,36 @@
 //     document.getElementById('btn2').classList.remove('dsp');
 //     document.getElementById('btn2').classList.add('dsp-none');
 // }
+const toggleNavBtn = document.getElementById('toggleNavBtn');
+const navLink = document.getElementById('nav-link');
+const navDisplay = navLink.style.display;
 
-function petFunc1(){
+function toggleNavButton() {
+    if (navLink.classList.contains('nav-link-dspNone')) {
+        document.getElementById('nav-link').classList.add('nav-link-dsp');
+        document.getElementById('nav-link').classList.remove('nav-link-dspNone');
+        document.getElementById('nav-button').classList.add('nav-btn-dsp');
+        document.getElementById('nav-button').classList.remove('nav-btn-dspNone');
+    }
+    else {
+        document.getElementById('nav-link').classList.remove('nav-link-dsp');
+        document.getElementById('nav-link').classList.add('nav-link-dspNone');
+        document.getElementById('nav-button').classList.remove('nav-btn-dsp');
+        document.getElementById('nav-button').classList.add('nav-btn-dspNone');
+    }
+}
+
+toggleNavBtn.addEventListener('click', toggleNavButton)
+
+
+
+function petFunc1() {
     document.getElementById('pet-btn1').classList.add('active-pet-btn')
     document.getElementById('pet-btn1').classList.remove('inactive-pet-btn')
     document.getElementById('pet-btn2').classList.add('inactive-pet-btn')
     document.getElementById('pet-btn2').classList.remove('active-pet-btn')
 }
-function petFunc2(){
+function petFunc2() {
     document.getElementById('pet-btn2').classList.add('active-pet-btn')
     document.getElementById('pet-btn2').classList.remove('inactive-pet-btn')
     document.getElementById('pet-btn1').classList.add('inactive-pet-btn')
@@ -25,76 +47,76 @@ function petFunc2(){
 }
 
 const plus1 = document.getElementById('plus1');
-function toggle1(){
-    if(plus1.innerHTML === '+'){
+function toggle1() {
+    if (plus1.innerHTML === '+') {
         plus1.innerHTML = '-';
         document.getElementById('toggle-content1').classList.remove('toggle-content')
     }
-    else{
-        plus1.innerHTML= '+';
+    else {
+        plus1.innerHTML = '+';
         document.getElementById('toggle-content1').classList.add('toggle-content')
     }
 }
 
-plus1.addEventListener('click' , toggle1)
+plus1.addEventListener('click', toggle1)
 
 
 
 const plus2 = document.getElementById('plus2');
-function toggle2(){
-    if(plus2.innerHTML === '+'){
+function toggle2() {
+    if (plus2.innerHTML === '+') {
         plus2.innerHTML = '-';
         document.getElementById('toggle-content2').classList.remove('toggle-content')
     }
-    else{
-        plus2.innerHTML= '+';
+    else {
+        plus2.innerHTML = '+';
         document.getElementById('toggle-content2').classList.add('toggle-content')
     }
 }
 
-plus2.addEventListener('click' , toggle2)
+plus2.addEventListener('click', toggle2)
 
 
 const plus3 = document.getElementById('plus3');
-function toggle3(){
-    if(plus3.innerHTML === '+'){
+function toggle3() {
+    if (plus3.innerHTML === '+') {
         plus3.innerHTML = '-';
         document.getElementById('toggle-content3').classList.remove('toggle-content')
     }
-    else{
-        plus3.innerHTML= '+';
+    else {
+        plus3.innerHTML = '+';
         document.getElementById('toggle-content3').classList.add('toggle-content')
     }
 }
 
-plus3.addEventListener('click' , toggle3)
+plus3.addEventListener('click', toggle3)
 
 
 const plus4 = document.getElementById('plus4');
-function toggle4(){
-    if(plus4.innerHTML === '+'){
+function toggle4() {
+    if (plus4.innerHTML === '+') {
         plus4.innerHTML = '-';
         document.getElementById('toggle-content4').classList.remove('toggle-content')
     }
-    else{
-        plus4.innerHTML= '+';
+    else {
+        plus4.innerHTML = '+';
         document.getElementById('toggle-content4').classList.add('toggle-content')
     }
 }
 
-plus4.addEventListener('click' , toggle4)
+plus4.addEventListener('click', toggle4)
 
 
 const plus5 = document.getElementById('plus5');
-function toggle5(){
-    if(plus5.innerHTML === '+'){
+function toggle5() {
+    if (plus5.innerHTML === '+') {
         plus5.innerHTML = '-';
         document.getElementById('toggle-content5').classList.remove('toggle-content')
     }
-    else{
-        plus5.innerHTML= '+';
+    else {
+        plus5.innerHTML = '+';
         document.getElementById('toggle-content5').classList.add('toggle-content')
     }
 }
 
-plus5.addEventListener('click' , toggle5)
+plus5.addEventListener('click', toggle5)

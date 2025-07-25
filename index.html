@@ -14,11 +14,15 @@
 
 <body>
     <nav>
-        <div>
-            <img src="img/fav-icon.jpg" style="width: 40px; height: 40px; border-radius: 99px;" alt="">
-            <a href="#" class="nav-head">Paw Haven</a>
+        <div class="nav-heading">
+            <div>
+               <img src="img/fav-icon.jpg" style="width: 40px; height: 40px; border-radius: 99px;" alt="">
+            <a href="#" class="nav-head">Paw Haven</a> 
+            </div>
+            
+            <button class="nav-toggle-btn" id="toggleNavBtn"><i class="fa-solid fa-grip-lines"></i></button>
         </div>
-        <div>
+        <div id="nav-link" class="nav-link-dspNone">
             <a href="#" class="active-nav">
                 <i class="fa-regular fa-house"></i>
                 Home
@@ -37,10 +41,13 @@
             </a>
             <a href="#">Pages</a>
         </div>
-        <button class="nav-button">
+        <div>
+           <button id="nav-button" class="nav-button nav-btn-dspNone">
             <i class="fa-solid fa-paw nav-icon"></i>
             Book an Appointment
-        </button>
+        </button> 
+        </div>
+        
     </nav>
     <header>
         <h1 class="heading-1">Love, Care, And Everything Pets Need</h1>
