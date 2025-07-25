@@ -506,12 +506,21 @@ header p {
 }
 
 .contact-row {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-block: 10px;
     gap: 30px;
+    width: 100%; */
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
+input[type='text'],
+input[type='email']{
+    width: 70%;
+}
 .contact-col {
     display: flex;
     flex-direction: column;
